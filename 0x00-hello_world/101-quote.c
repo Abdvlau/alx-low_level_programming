@@ -1,10 +1,16 @@
-#include <stdio.h>
 #include <unistd.h>
+
 /**
- * main - A c program that prints a line to the standard error
- * Return: Always returns 1 to indicate an error
+ * main - Entry point
+ *
+ * Return: Always 1 (Error)
  */
 int main(void)
-	fput("and that piece of art is useful\" - Dora Korpar, 2015-10-19\r", stdout);
-return (1);
+{
+    const char *msg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
+    write(2, msg, 59);
+
+    return (1);
 }
+
