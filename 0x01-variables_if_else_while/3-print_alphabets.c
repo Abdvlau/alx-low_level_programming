@@ -1,26 +1,31 @@
 #include <stdio.h>
+
 /**
- * main - main block
- * REturn: 0 (Success)
+ * main - Entry point of the program
+ *
+ * Description: This function prints the lowercase and uppercase alphabets
+ * separated by a new line.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char c = 'a';
+    char c = 'a';
 
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
+    while (c <= 'z')
+    {
+        putchar(c);
+        c++;
+    }
 
-	c = 'A';
+    c = 'A';
 
-	while (c <= 'Z')
-	{
-		putchar(c);
-		c++;
-	}
+    while (c <= 'Z')
+    {
+        putchar(c);
+        c++;
+    }
 
-	putchar('\n');
-	return (0);
+    putchar('\n');
+    return (0);
 }

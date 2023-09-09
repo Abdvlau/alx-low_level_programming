@@ -1,23 +1,33 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main -main block
- * Return: 0 (Success)
+ * main - Entry point of the program
+ *
+ * Description: This program prints all unique combinations of two-digit numbers
+ * separated by a comma and space, excluding repetitions.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int c = 0;
+    int i, j;
 
-	while (c < 10)
-	{
-		putchar(48 + c);
-		if (c != 9)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-		c++;
-	}
-	putchar('\n');
-	return (0);
+    for (i = 0; i < 10; i++)
+    {
+        for (j = i + 1; j < 10; j++)
+        {
+            putchar(i + '0'); 
+            putchar(j + '0');
+
+            if (!(i == 8 && j == 9)) 
+            {
+                putchar(','); 
+                putchar(' '); 
+            }
+        }
+    }
+
+    putchar('\n'); 
+    return (0);
 }
+
