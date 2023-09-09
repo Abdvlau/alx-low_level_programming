@@ -9,9 +9,9 @@ char letter = 'a';
 while (letter <= 'z')
 {
 	putchar(letter);
-	leter++;
+	letter++;
 }
-letter = 'A'
+letter = 'A';
 while (letter <= 'Z')
 {
 	putchar(letter);
