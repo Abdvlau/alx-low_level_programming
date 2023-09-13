@@ -1,14 +1,19 @@
 #include "main.h"
+
 /**
- * main - main block
- * Return: 0 (Success)
+ * main - Entry point
+ * Return:0
  */
+
 int main(void)
 {
-char outputString[] = "_putchar\n";
-for (int i = 0; outputString[i] != '\0'; i++)
+char c[9] = "_putchar";
+int i = 0;
+while (i < 8)
 {
-putchar(outputString[i]);
+_putchar(c[i]);
+i++;
 }
+_putchar('\n');
 return (0);
 }
